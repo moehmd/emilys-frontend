@@ -1,0 +1,144 @@
+.border.p-5 {
+  border: black;
+}
+
+.h4.mb-4 {
+  font-size: 30px;
+  font-family: system-ui;
+  color: black;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.browser-default {
+  height: 34px;
+  width: 495px;
+}
+
+.mb-4 {
+  font-size: medium;
+  font-weight: bolder;
+  display: block;
+  border-color: #1c9042;
+}
+
+select option {
+  background-color: #6c8b78;
+  color: #edfff4;
+}
+
+select option:hover {
+  background-color: #1c9042;
+}
+
+::placeholder {
+  color: rgb(26, 24, 24);
+}
+
+.contact {
+  background-image: url("../../assets/img/member.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(95%);
+}
+
+#currency {
+  font-size: 30px;
+  //font-weight: bold;
+  font-family: system-ui;
+}
+
+#textInput,
+#defaultContactFormName,
+#defaultContactFormEmail,
+#defaultSelect,
+#contact-preference,
+#AddressInp,
+#postalCodeInp,
+#VilleInp {
+  background-color: transparent;
+  color: black;
+}
+
+label {
+  color: black;
+  //font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  #amount {
+      max-width: 220px;
+  }
+}
+
+.buttonfx {
+  color: black;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #edfff4;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font: bold 14px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  margin-bottom: 20px;
+}
+
+.curtainup:disabled {
+  background: gray;
+  color: #edfff4;
+  outline: none;
+  border: none;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font: bold 14px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.curtainup:enabled {
+  background: #1c9042;
+  color: #edfff4;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font: bold 14px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.row {
+  font-family: system-ui;
+  font-size: 12px;
+  // font-weight: bold;
+}

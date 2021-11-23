@@ -1,0 +1,24 @@
+<!-- <div [dir]='ui_direction'>
+
+    <div class="d-flex justify-content-center">
+        <app-main-menu></app-main-menu>
+        <router-outlet></router-outlet>
+        <app-front></app-front>
+    </div>
+    <app-logout *ngIf='(Show_Logout$ | async)' style='position:fixed;bottom:20px;right:20px'>
+    </app-logout>
+</div> -->
+
+<div id="preloder">
+<app-loader></app-loader>
+</div>
+<app-main-menu></app-main-menu>
+<div class="content-wrapper">
+    <div class="content">
+      <app-fixed-button></app-fixed-button>
+        <router-outlet  (activate)="onActivate($event)"></router-outlet>
+    </div>
+    <div class="footer">
+        <app-front></app-front>
+    </div>
+</div>

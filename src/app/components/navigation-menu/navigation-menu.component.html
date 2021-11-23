@@ -1,0 +1,103 @@
+<header class="header banner-section">
+  <div class="container-fluid">
+    <div class="row v-center">
+      <div class="header-item item-center">
+        <div class="menu-overlay">
+        </div>
+        <nav class="menu" >
+          <div class="mobile-menu-head">
+            <div class="go-back"> <i class="icofont-arrow-left"></i></div>
+            <div class="current-menu-title"></div>
+            <div class="mobile-menu-close"><i class="icofont-close-line"></i></div>
+          </div>
+          <ul class="menu-main">
+            <li class="SpacingNavbar SpacingNavbarMobile">
+              <a (click)="toggleMenu()" routerLink="/Accueil">ACCUEIL</a>
+            </li>
+            <li class="menu-item-has-children SpacingNavbar SpacingNavbarMobile">
+              <a routerLink='/Emilie'>L'ASSOCIATION</a>
+              <div class="sub-menu single-column-menu" style="border-radius : 3px;">
+                <ul>
+                  <li><a (click)="toggleMenu()" routerLink='/Association/Emilie'>EMILIE</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a (click)="toggleMenu()" routerLink='/Association/Presentation'>PRESENTATION</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a (click)="toggleMenu()" routerLink="/Association/NosMissions">NOS MISSIONS</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a (click)="toggleMenu()" routerLink='/Association/LeBurreau'>LE BURREAU</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a (click)="toggleMenu()" routerLink='/Association/LesAntennes'>LES ANTENNES</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li class="menu-item-has-children SpacingNavbar SpacingNavbarMobile">
+              <a>SÉCURITÉ EN LABORATOIRE </a>
+
+              <div class="sub-menu mega-menu mega-menu-column-6" style="border-radius : 3px;">
+                <div class="list-item">
+                  <h4 class="title" routerLink='/SecuriteLaboratoire/RisquePrevention'>RISQUES ET PRÉVENTION</h4>
+                  <div class="dropdown-divider"></div>
+                  <ul style="padding-bottom: 20px;">
+                    <li><a routerLink='/SecuriteLaboratoire/RisquePrevention/RisqueBiologique' (click)="toggleMenu()">LE RISQUE BIOLOGIQUE</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/RisquePrevention/RisqueChimique' (click)="toggleMenu()">LE RISQUE CHIMIQUE</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/RisquePrevention/RisquePhysique' (click)="toggleMenu()">LE RISQUE PHYSIQUE</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/RisquePrevention/RisqueRadioActif' (click)="toggleMenu()">LE RISQUE RADIOACTIF</a></li>
+                  </ul>
+                  <h4 class="title" routerLink='/SecuriteLaboratoire/EquipementProtection'> LES ÉQUIPEMENTS DE PROTECTION</h4>
+                  <div class="dropdown-divider"></div>
+                  <ul>
+                    <li><a routerLink='/SecuriteLaboratoire/EquipementProtection/ProtectionIndividuelle' (click)="toggleMenu()">PROTECTION INDIVIDUELLE</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/EquipementProtection/ProtectionCollective' (click)="toggleMenu()">PROTECTION COLLECTIVE</a></li>
+                  </ul>
+
+                </div>
+
+                <div class="list-item">
+                  <h4 class="title" routerLink='/SecuriteLaboratoire/AccidentMaladie'>ACCIDENTS ET MALADIE</h4>
+                  <div class="dropdown-divider"></div>
+                  <ul>
+                    <li><a routerLink='/SecuriteLaboratoire/AccidentMaladie/AccidentTravail' (click)="toggleMenu()">ACCIDENT DU TRAVAIL</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/AccidentMaladie/MaladieProffessionelle' (click)="toggleMenu()">MALADIE PROFESSIONELLE</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/AccidentMaladie/FauteInexcusable' (click)="toggleMenu()">LA FAUTE INEXCULABLE</a></li>
+                  </ul>
+                  <h4 class="title spacing" routerLink='/SecuriteLaboratoire/FormationInformation'>FORMATIONS ET INFORMATIONS</h4>
+                  <div class="dropdown-divider"></div>
+                  <ul>
+                    <li><a routerLink='/SecuriteLaboratoire/FormationInformation/Formation' (click)="toggleMenu()">FORMATION</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/FormationInformation/Information' (click)="toggleMenu()">INFORMATION</a></li>
+                  </ul>
+
+
+                </div>
+                <div class="list-item">
+                  <h4 class="title" routerLink='/SecuriteLaboratoire/ReponsabiliteDroit'>RESPONSABILITÉ ET DROITS</h4>
+                  <div class="dropdown-divider"></div>
+                  <ul>
+                    <li><a routerLink='/SecuriteLaboratoire/ReponsabiliteDroit/NotionResponsabilite' (click)="toggleMenu()">LA NOTION DE REPONSABILITÉ</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/ReponsabiliteDroit/Delits' (click)="toggleMenu()">LES DÉLITS</a></li>
+                    <li><a routerLink='/SecuriteLaboratoire/ReponsabiliteDroit/ActeursResponsabilite' (click)="toggleMenu()">LES ACTEURS ET LEUR REPONSABILITÉ</a></li>
+                  </ul>
+                  <h4 class="title spacing" routerLink='/SecuriteLaboratoire/LienUtile'>LIENS UTILES</h4>
+                  <div class="dropdown-divider"></div>
+                </div>
+
+              </div>
+            </li>
+            <li class="menu-item-has-children SpacingNavbar SpacingNavbarMobile">
+              <a (click)="toggleMenu()" routerLink="/ActualiteActivite/actualite">ACTUALITÉS</a>
+            </li>
+            <li class="SpacingNavbar SpacingNavbarMobile">
+              <a (click)="toggleMenu()" routerLink="/nous-contacter">NOUS CONTACTER</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+      <div class="mobile-menu-trigger">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>

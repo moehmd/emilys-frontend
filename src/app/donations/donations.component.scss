@@ -1,0 +1,144 @@
+.border.p-5 {
+  border: black;
+}
+
+.h4.mb-4 {
+  font-size: 30px;
+  font-family: system-ui;
+  color: #d3ffe4;
+  padding-bottom: 20px;
+}
+
+.browser-default {
+  height: 34px;
+  width: 495px;
+}
+
+.mb-4 {
+  font-size: medium;
+  font-weight: bolder;
+  display: block;
+  border-color: #d3ffe4;
+}
+
+#currency {
+  font-size: 32px;
+  //font-weight: bolder;
+  font-family: system-ui;
+  color: #d3ffe4;
+}
+
+select option {
+  background-color: rgb(129, 125, 125);
+}
+
+select option:hover {
+  background-color: #1c9042;
+}
+
+.contact {
+  background-image: url("../../assets/img/donations.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(100%);
+}
+
+::placeholder {
+  color: #d3ffe4;
+}
+
+#textInput,
+#defaultContactFormName,
+#defaultContactFormEmail,
+#defaultSelect,
+#contact-preference,
+#AddressInp,
+#postalCodeInp,
+#VilleInp,
+#amount {
+  background-color: transparent;
+  color: #d3ffe4;
+}
+
+label {
+  color: #d3ffe4;
+}
+
+#amount {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #amount {
+      max-width: 220px;
+  }
+}
+
+.buttonfx {
+  color: black;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font:bold 16px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.curtainup:disabled {
+  background: gray;
+  color: white;
+  outline: none;
+  border: none;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font:bold 14px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  margin-top: 25px;
+}
+
+.curtainup:enabled {
+  background: #1c9042;
+  color: #edfff4;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font:bold 14px 'Bitter', system-ui;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.row {
+  font-family: system-ui;
+  font-size: 12px;
+
+}

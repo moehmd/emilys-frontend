@@ -1,0 +1,251 @@
+
+<div class="container" *ngFor="let item of news">
+  <div class="row">
+    <div class="col-md-9 mx-auto">
+      <h3>{{ item.TITLE }}</h3>
+      <div class="fontStyle">
+        <p class="textRight" style="font-size: 18px">{{ item.ENTRY_DATE }}</p>
+      </div>
+      <hr class="hr-13" />
+      <div class="fontSubTitle">
+        <p>
+          {{ item.SUBTITLE }}
+        </p>
+      </div>
+      <div class="fontParagraph">
+        <p>
+          {{ item.DESCRIPTION }}
+        </p>
+      </div>
+      <div class="fontStyleSource">
+        *ngIf="item.sources.NEWS_SOURCE_NAME"
+        <p class="textRight">{{ item.sources.NEWS_SOURCE_NAME }}</p>
+        <br /><br /><br />
+      </div>
+      <div class="col-md-12" *ngIf="item.My_Uploaded_files">
+        <div class="col-md-6" *ngFor="let image of item.My_Uploaded_files">
+          <img [src]="image.My_URL" width="100%" height="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 2%">
+  <div class="row">
+    <div class="col-md-9 mx-auto">
+      <h3>
+        Courrier de l'Association Emilys au Président de l'INRAe
+      </h3>
+      <div class="fontStyle">
+        <p class="textRight" style="font-size: 18px">17 Juin 2021,</p>
+      </div>
+      <hr class="hr-13" />
+      <div class="fontParagraph">
+        <p>
+          Parallèlement à cette action de sensibilisation, l'Association Emilys a interpellé ouvertement le président de l'INRAe par courrier afin de lui demander de sortir son institut de cette situation de blocage et lui faire reconnaître publiquement sa responsabilité dans le décès d'Emilie.
+        </p>
+      </div>
+      <div class="btn-container">
+        <div class="betweenButton">
+          <a href="assets/Courrier.pdf" target="_blank"
+            ><span class="buttonDesign"
+              ><i class="fas fa-file-pdf"></i>Courrier pour l'INRA version
+            </span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 6%">
+  <div class="row">
+    <div class="col-md-9 mx-auto">
+      <h3>
+        Action de l'Association Emilys pour les deux ans du décès d'Emilie
+      </h3>
+      <div class="fontStyle">
+        <p>Prenez soin de vous.</p>
+        <p class="textRight" style="font-size: 18px">17 Juin 2021,</p>
+      </div>
+      <hr class="hr-13" />
+      <div class="fontSubTitle">
+        <p>
+          Opération de sensibilisation aux entrées de l'INRAe de Jouy en Josas
+        </p>
+      </div>
+      <div class="fontParagraph">
+        <p>
+          Ce 17 juin, deux ans après le décès d'Emilie, l'Association Emilys
+          constituée en sa mémoire, a manifesté devant le laboratoire de l'INRAe
+          de Jouy en Josas où elle s'était mortellement blessée. Elle demande
+          que la transparence soit faite et que le lien de causalité soit
+          reconnu par l'INRAE, indépendamment de la procédure judiciaire.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <div
+          class="col-md-6 col-md-offset-3"
+          style="margin-top: 3%; margin-bottom: 3%"
+        >
+          <img src="assets/img/001.png" />
+        </div>
+      </div>
+      <div class="fontStyleSource">
+        <p class="textRight" style="font-style: italic">
+          « JUSTICE pour Émilie, sécurité pour tous dans les laboratoires. » La
+          banderole, accrochée à l'entrée de l'Institut par les membres de
+          l'Association durant la matinée.
+        </p>
+        <p class="textRight" style="font-style: italic">Association Emilys ©</p>
+      </div>
+      <div class="fontParagraph">
+        <p>
+          L'Association Emilys a organisé ce jeudi 17 juin, une action de
+          sensibilisation et d'information aux abords du centre INRAe de Jouy en
+          Josas, là où Emilie s'était blessée. Parce que la position de l'INRAe
+          n'a toujours pas évolué afin de reconnaître la causalité entre
+          l'accident du travail et le décès d'Emilie et que l'institution refuse
+          de communiquer à l'expert mandaté par la justice les éléments dont il
+          a besoin pour mener son enquête, l'Association Emilys a distribué de
+          nombreux tracts dénonçant l'attitude de l'institution.
+        </p>
+      </div>
+      <div class="col-md-12 text-center">
+        <img
+          src="assets/img/002.png"
+          style="margin-top: 3%"
+          class="col-md-6"
+          width="800"
+          height="200"
+        />
+        <img
+          src="assets/img/003.png"
+          style="margin-top: 3%"
+          class="col-md-6"
+          width="800"
+          height="200"
+        />
+      </div>
+      <div class="col-md-12">
+        <div
+          class="col-md-6 col-md-offset-3"
+          style="margin-top: 3%; margin-bottom: 3%">
+          <img src="assets/img/004.png" />
+        </div>
+      </div>
+      <div class="col-md-12" style="margin-top: 5%;">
+        <img
+          src="assets/img/005.png"
+          style="margin-top: 3%"
+          class="col-md-6"
+          width="800"
+          height="100%"
+        />
+        <img
+          src="assets/img/006.png"
+          style="margin-top: 3%; margin-bottom: 2%"
+          class="col-md-6"
+          width="800"
+          height="100%"
+        />
+      </div>
+      <div class="fontStyleSource"  style="margin-bottom: 3%">
+        <p class="textRight" style="font-style: italic">
+          Le tract distribué par l'Association Emilys - Association Emilys©
+        </p>
+      </div>
+      <div class="fontParagraph">
+        <p class="text-center">
+          Le personnel de l'INRAe a été sensible et a manifesté son
+          encouragement pour cette action. Des personnes de l'institut sont
+          venus aider les membres de l'association. La presse a relayé cette
+          action dans divers journaux :
+        </p>
+      </div>
+      <div class="col-md-12">
+        <img
+          src="assets/img/007.jpg"
+          class="col-md-6"
+          width="800"
+          height="100%"
+        />
+        <a target="_blank" href="https://www.opinion-internationale.com/2021/06/17/emilie-jaumain-decedee-il-y-a-deux-ans-quand-linrae-se-comporte-comme-le-laboratoire-de-wuhan-en-matiere-de-covid-ledito-de-michel-taube-et-raymond-taube_92230.html">
+        <img
+        src="assets/img/008.png"
+        style="margin-top: 3%; cursor: pointer;"
+        class="col-md-6 img-custom"
+        width="800"
+        height="100%"
+      />
+    </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 6%">
+  <div class="row">
+    <div class="col-md-9 mx-auto">
+      <h3>
+        Le bureau de l’association souhaite à toutes et à tous une excellente
+        année 2021 !
+      </h3>
+      <div class="fontStyle">
+        <p>Prenez soin de vous.</p>
+        <p class="textRight" style="font-size: 18px">9 Janvier 2021,</p>
+      </div>
+      <hr class="hr-13" />
+      <div class="fontSubTitle">
+        <p>
+          Rapport de la mission d’expertise de la sécurité dans les laboratoires
+          de recherche sur les prions infectieux.
+        </p>
+      </div>
+      <div class="fontParagraph">
+        <p>
+          Nous avons envoyé le 29 septembre 2020 à Mme Frédérique Vidal,
+          ministre de l’enseignement supérieur, un courrier dans lequel nous
+          présentions l’association. Nous avons appris que son ministère avait
+          diligenté, courant 2019, une mission d’inspection nationale sur la
+          sécurité des laboratoires confinés manipulant des souches de prions.
+          Vous trouverez ci-après l’intégralité de ce rapport. Après relecture
+          par le bureau de l’association, nous avons envoyé courant Décembre
+          2020 une lettre de réponse au Ministère contestant un certain nombre
+          de points de ce rapport. Vous trouverez également une copie de cette
+          lettre. N’hésitez pas à partager votre avis au sujet de ce rapport
+          avec nous via notre courriel:
+          <span
+            ><a
+              class="emailDesign"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=associationemilys@gmail.com&su=subject_here&body=body_here"
+              target="_blank"
+              >association.emilys@gmail.com</a
+            ></span
+          >
+        </p>
+      </div>
+      <!-- <div class="fontStyleSource">
+        <p class="textRight">Copyright © 2020-2021 MindsUnion</p>
+        <br /><br /><br />
+      </div> -->
+      <div class="btn-container">
+        <div>
+          <a href="assets/Rapport.pdf" target="_blank"
+            ><span class="buttonDesign"
+              ><i class="fas fa-file-pdf"></i> Rapport du Ministère</span
+            ></a
+          >
+        </div>
+        <div class="betweenButton">
+          <a href="assets/Lettre.pdf" target="_blank"
+            ><span class="buttonDesign"
+              ><i class="fas fa-file-pdf"></i> Lettre de réponse au ministère
+            </span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

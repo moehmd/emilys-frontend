@@ -1,0 +1,490 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+h4 {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+}
+
+.site-logo {
+    display: inline-block;
+    margin-right: 1px;
+    padding-top: -2px;
+    width: 200px;
+    height: 250px;
+}
+
+
+.container-fluid {
+    padding: 0 !important;
+    overflow: visible;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    /* padding: 0; */
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0;
+}
+
+.social-network a.icoRss:hover {
+    background: radial-gradient( circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: red;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.iconn {
+    background-color: rgb(13, 27, 14);
+    border: rgb(153, 153, 153);
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #D3D3D3;
+}
+
+.social-circle li i {
+    margin: 0;
+    /* line-height: 30px; */
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: rgb(21, 68, 21);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+    padding-left: 1px;
+    padding-top: 5px;
+}
+
+.emily-logo {
+    height: 110px;
+    float: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-left: 100px; */
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: system-ui;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 890px;
+}
+
+p {
+    text-align: center;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #08220c;
+    border: 0;
+    border-radius: 0;
+    min-height: 60px;
+    font-family: system-ui;
+    font-size: 19px;
+    box-sizing: content-box;
+    /* for bottom border */
+    margin-bottom: 0;
+}
+
+.navbar-toggler-icon {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+
+ul li a {
+    color: white;
+}
+
+ul li a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+ul .dropdown-menu {
+    background-color: #08220c;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 18px;
+}
+
+ul li {
+    background-color: #08220c;
+}
+
+ul .dropdown-menu a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .navbar-toggler-icon {
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .navbar-toggler-icon:hover {
+        color: green;
+    }
+    .text {
+        margin-left: 10px;
+        font-size: 26px;
+    }
+    .custom-toggler {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+}
+
+
+.header {
+    overflow: auto;
+    background: white;
+    background-color: rgb(13, 27, 14)
+}
+
+.header__title {
+    float: left;
+    font-size: 25px;
+}
+
+.header__cta {
+    float: right;
+}
+
+.site-btn {
+    padding: 9px 10px;
+    display: inline-block;
+    border-color: rgb(26, 25, 25);
+    font-family: system-ui;
+    font-weight: 700;
+    /* border: 1px; */
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 8px;
+    background: darkseagreen;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0px;
+    /* margin-right: 25px; */
+}
+
+#Second {
+    width: 173px;
+}
+
+.header-section .site-btn:hover {
+    background-color: rgb(185, 67, 67);
+}
+
+@media screen and (max-width: 720px) {
+    .header__title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header__cta {
+        width: 100%;
+        text-align: center;
+    }
+    .header__cta--question {
+        display: none;
+    }
+    .site-btn {
+        margin-top: 10px;
+    }
+    #Second {
+        margin-left: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .site-btn {
+        margin-left: 0 !important;
+        padding-right: 5px;
+    }
+}
+
+.text-place {
+    padding-top: 5px;
+    display: inline-block;
+}
+
+p {
+    color: #08220c;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    font-family: system-ui;
+    font-size: 24px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 45em;
+    animation: type 4s steps(60, end);
+    font-weight: bolder;
+
+}
+
+.titleAnimationP1{
+  color: #08220c;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  font-family: system-ui;
+  font-size: 24px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 4s steps(60, end);
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+.titleAnimationP2{
+  color: #08220c;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  font-family: system-ui;
+  font-size: 24px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 56em;
+  animation: type 6s steps(60, end);
+  font-weight: bolder;
+
+}
+
+p:nth-child(2) {
+    animation: type2 8s steps(60, end);
+}
+
+p a {
+    color: lime;
+    text-decoration: none;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+ ::selection {
+    background: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+
+  .titleAnimationP1{
+    font-size: 12px;
+    width:23em;
+    padding-top: 3px;
+  }
+  .Image-Logo{
+     padding-left: 18px;
+     padding-top: 5px;
+  }
+  .emily-logo{
+    padding-left: 100px;
+  }
+  }
+  @media only screen and (min-width: 360px) and (max-width: 640px) {
+
+    .titleAnimationP1{
+      font-size: 12px;
+      width:29em;
+      padding-top: 3px;
+    }
+    .Image-Logo{
+       padding-left: 18px;
+       padding-top: 5px;
+    }
+    .emily-logo{
+      padding-left: 130px;
+    }
+    }
+  @media only screen and (min-width: 374px) and (max-width: 668px) {
+
+    .titleAnimationP1{
+      font-size: 12px;
+      width:29em;
+      padding-top: 3px;
+    }
+    .Image-Logo{
+       padding-left: 60px;
+       padding-top: 2px;
+    }
+  }
+
+  @media only screen and (min-width: 413px) and (max-width: 737px) {
+
+    .titleAnimationP1{
+      font-size: 12px;
+      width: 34em;
+      padding-top: 3px;
+    }
+    .Image-Logo{
+       padding-left: 80px;
+       padding-top: 2px;
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1025px) {
+
+    .titleAnimationP1{
+      font-size: 18px;
+      width: 35em;
+      padding-top: 15px;
+    }
+    .Image-Logo{
+       padding-left: 0px;
+       padding-top: 2px;
+    }
+    .emily-logo{
+      padding-left:0px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    br{
+      display: none;
+    }
+    .titleAnimationP1{
+      font-size: 24px;
+      width: 45em;
+      /* padding-top: 15px; */
+    }
+    .Image-Logo{
+       padding-left: 0px;
+       padding-top: 2px;
+    }
+    .emily-logo{
+      padding-left:0px;
+    }
+
+  }

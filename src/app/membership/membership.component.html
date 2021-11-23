@@ -1,0 +1,33 @@
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form class="p-5" [formGroup]="memberData" (ngSubmit)="onSubmit()">
+          <p class="h4 mb-4 text-center" style="font-weight: bold !important;">Veuillez remplir le formulaire</p>
+          <input class="form-control mb-4" id="textInput" type="text" formControlName="FirstName" placeholder="Prénom"
+            required>
+          <input type="text" id="defaultContactFormName" class="form-control mb-4" formControlName="LastName"
+            placeholder="Nom" required>
+          <input type="text" formControlName="Address" id="AddressInp" class="form-control mb-4" value=""
+            placeholder="Adresse" required />
+          <input type="number" formControlName="PostalCode" id="postalCodeInp" class="form-control mb-4" value=""
+            placeholder="Code Postal" min="0" minlength="3" required />
+          <input type="text" formControlName="City" id="VilleInp" class="form-control mb-4" value="" placeholder="Ville"
+            required />
+          <select id="defaultSelect" class="browser-default custom-select mb-4" formControlName="Type">
+            <option selected value='' disabled="disabled" id="hehe" required>Choisissez s'il vous plaît</option>
+            <option value="Demandez de l'aide">Adhérer</option>
+            <option value="Racontez-nous votre expérience">Renouvellement</option>
+          </select>
+          <label>Montant du don
+            <input type="text" class="form-control mb-4" id="amount" name="field2" value="10" disabled />
+          </label><span id="currency" min="0"> €</span>
+          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Courriel"
+            formControlName="email" required>
+          <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!memberData.valid"
+            >Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

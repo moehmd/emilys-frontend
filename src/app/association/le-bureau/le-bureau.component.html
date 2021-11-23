@@ -1,0 +1,90 @@
+<h1 id="logo">Le Bureau</h1>
+<p>
+  L’Association Emilys est une association reconnue loi de 1901. Depuis le 29
+  Avril 2020, son bureau est composé des 7 membres bénévoles suivants :
+</p>
+
+<div class="wrapper col-md-12">
+  <div class="our_team">
+    <div class="team_member col-md-3"  *ngFor="let entry of data">
+      <div class="member_img">
+        <img [src]="entry.My_Uploaded_files[0].My_URL" />
+        <div class="social_media">
+          <p>{{ entry.MAJOR }}</p>
+        </div>
+      </div>
+      <h3>{{ entry.MEMBER_NAME }}</h3>
+      <span>{{ entry.POSITION }}</span>
+    </div>
+    <!-- <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Karine Naudin.jpg">
+                <div class="social_media">
+                    <p>Entrepreneur salarié</p>
+                </div>
+            </div>
+            <h3>Karine Naudin</h3>
+            <span>Vice-Présidente</span>
+        </div>
+        <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Ghislaine Poizat.jpg">
+                <div class="social_media">
+                    <p>Ingénieur d’étude scientifique</p>
+                </div>
+            </div>
+            <h3>Ghislaine Poizat</h3>
+            <span>Secrétaire générale</span>
+        </div>
+        <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Thomas Bancel.jpg">
+                <div class="social_media">
+                    <p>Rédacteur technicien</p>
+                </div>
+            </div>
+            <h3>Thomas Bancel</h3>
+            <span>Secrétaire adjoint</span>
+        </div>
+    </div>
+
+    <div class="our_team">
+        <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Guillaume Durand.jpg">
+                <div class="social_media">
+                    <p>Technicien supérieur de laboratoire</p>
+                </div>
+            </div>
+            <h3>Guillaume Durand</h3>
+            <span>Trésorier</span>
+        </div>
+        <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Madeleine Jaillet.jpg">
+                <div class="social_media">
+                    <p>Assistante ingénieur scientifique</p>
+                </div>
+
+            </div>
+            <h3>Madeleine Jaillet</h3>
+            <span>Responsable communication</span>
+        </div>
+        <div class="team_member">
+            <div class="member_img">
+                <img src="assets/img/Gerald Sellier.jpg">
+                <div class="social_media">
+                    <p>Ingénieur automobile</p>
+                </div>
+
+            </div>
+            <h3>Gérald Sellier</h3>
+            <span>Administrateur Web</span>
+        </div> -->
+  </div>
+</div>
+<p>Les membres nommés seront principalement actifs en région parisienne.</p>
+<p>
+  Le siège social de l’association a été défini à l’adresse suivante : 129
+  avenue de Saint Ouen, 75017 PARIS.
+</p>

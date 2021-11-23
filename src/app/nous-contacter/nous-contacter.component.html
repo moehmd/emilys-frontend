@@ -1,0 +1,55 @@
+<div class="contact darken-pseudo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form class="p-5" [formGroup]="userData" (ngSubmit)="sendDataAsFormBody()">
+
+          <p class="h4 mb-4 text-center">Nous contacter</p>
+
+
+          <input class="form-control mb-4" id="textInput" type="text" formControlName="FirstName" placeholder="Prénom"
+            required>
+
+          <input type="text" id="defaultContactFormName" class="form-control mb-4" formControlName="LastName"
+            placeholder="Nom" required>
+
+          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail"
+            formControlName="email" required>
+
+          <label for="contact-preference">Motif:</label>
+          <span>
+            <ul class="field">
+
+              <li>
+                <label>
+                  <input type="radio" name="HelpOrExp" id="contact-preference" value="Demandez de l'aide"
+                    formControlName="HelpOrExp" required> Demadez de l'aide
+                </label>
+
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="HelpOrExp" id="contact-preference" value="Partagez votre expérience"
+                    formControlName="HelpOrExp"> Partagez votre expérience
+                </label>
+
+              </li>
+
+            </ul>
+
+
+          </span>
+
+          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" formControlName="msgUser"
+            placeholder="Message" required></textarea>
+
+
+
+          <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!userData.valid">Envoyer</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
